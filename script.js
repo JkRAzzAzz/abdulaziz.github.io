@@ -1,0 +1,12 @@
+jQuery(document).ready(function(){
+    jQuery('.close-button').click(function(){
+        jQuery('.nheader').toggleClass('menu-open');
+        jQuery(this).toggleClass('open-btn');
+        jQuery('.boody').toggleClass('body-open');
+    });
+	jQuery('ul#father>li').hover(function(){
+        jQuery(this).find('.son').show(150);
+	},function(){
+        jQuery(this).find('.son').hide(150);
+	});
+	});
